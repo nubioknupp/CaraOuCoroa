@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		8C908AB91DBD14C100233104 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C908AB81DBD14C100233104 /* AppDelegate.swift */; };
-		8C908ABB1DBD14C100233104 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C908ABA1DBD14C100233104 /* ViewController.swift */; };
+		8C908ABB1DBD14C100233104 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C908ABA1DBD14C100233104 /* MainViewController.swift */; };
 		8C908ABE1DBD14C100233104 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C908ABC1DBD14C100233104 /* Main.storyboard */; };
 		8C908AC01DBD14C100233104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C908ABF1DBD14C100233104 /* Assets.xcassets */; };
 		8C908AC31DBD14C100233104 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C908AC11DBD14C100233104 /* LaunchScreen.storyboard */; };
+		8C908ACB1DBD17BB00233104 /* DetalhesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C908ACA1DBD17BB00233104 /* DetalhesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8C908AB51DBD14C100233104 /* CaraOuCoroa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaraOuCoroa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C908AB81DBD14C100233104 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C908ABA1DBD14C100233104 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C908ABA1DBD14C100233104 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8C908ABD1DBD14C100233104 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C908ABF1DBD14C100233104 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C908AC21DBD14C100233104 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C908AC41DBD14C100233104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C908ACA1DBD17BB00233104 /* DetalhesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalhesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				8C908AB81DBD14C100233104 /* AppDelegate.swift */,
-				8C908ABA1DBD14C100233104 /* ViewController.swift */,
+				8C908ABA1DBD14C100233104 /* MainViewController.swift */,
+				8C908ACA1DBD17BB00233104 /* DetalhesViewController.swift */,
 				8C908ABC1DBD14C100233104 /* Main.storyboard */,
 				8C908ABF1DBD14C100233104 /* Assets.xcassets */,
 				8C908AC11DBD14C100233104 /* LaunchScreen.storyboard */,
@@ -91,7 +94,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Nubio Knupp";
 				TargetAttributes = {
 					8C908AB41DBD14C100233104 = {
@@ -136,8 +139,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C908ABB1DBD14C100233104 /* ViewController.swift in Sources */,
+				8C908ABB1DBD14C100233104 /* MainViewController.swift in Sources */,
 				8C908AB91DBD14C100233104 /* AppDelegate.swift in Sources */,
+				8C908ACB1DBD17BB00233104 /* DetalhesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +185,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -230,6 +235,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -297,6 +303,7 @@
 				8C908AC91DBD14C100233104 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
