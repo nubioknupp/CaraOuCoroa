@@ -11,9 +11,20 @@ import UIKit
 
 class DetalhesViewController: UIViewController {
     
+    var numeroRandomicoRecebido : Int!
+    
+    @IBOutlet weak var moedaImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        if(numeroRandomicoRecebido == 0){
+            //cara
+            moedaImageView.image = #imageLiteral(resourceName: "moeda_cara")
+        } else{
+            //coroa
+            moedaImageView.image = #imageLiteral(resourceName: "moeda_coroa")
+        }
     }
     
     override func didReceiveMemoryWarning() {

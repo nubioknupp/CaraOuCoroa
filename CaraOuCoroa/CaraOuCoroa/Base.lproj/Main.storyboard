@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BPg-ZL-n0A">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,11 +18,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="xgM-Hb-qeD">
-                                <rect key="frame" x="-0.5" y="88.5" width="321" height="253"/>
+                                <rect key="frame" x="27" y="138" width="321" height="253"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mjp-dl-NbM">
                                         <rect key="frame" x="0.0" y="0.0" width="321" height="154"/>
@@ -39,7 +39,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="271" height="74"/>
                                                 <state key="normal" backgroundImage="botao_jogar"/>
                                                 <connections>
-                                                    <segue destination="9WR-dU-GGd" kind="show" id="jvz-4T-uf3"/>
+                                                    <segue destination="9WR-dU-GGd" kind="show" identifier="segueDetalhes" id="jvz-4T-uf3"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -68,11 +68,11 @@
                         <viewControllerLayoutGuide type="bottom" id="1vC-Ba-q2Q"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="EuO-cb-r5M">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="avS-of-A1F">
-                                <rect key="frame" x="7.5" y="132" width="305" height="304"/>
+                                <rect key="frame" x="35" y="181.5" width="305" height="304"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moeda_cara" translatesAutoresizingMaskIntoConstraints="NO" id="hRy-AV-XvO">
                                         <rect key="frame" x="0.0" y="0.0" width="305" height="304"/>
@@ -86,6 +86,9 @@
                             <constraint firstItem="avS-of-A1F" firstAttribute="centerX" secondItem="EuO-cb-r5M" secondAttribute="centerX" id="kX1-M7-PV1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="moedaImageView" destination="hRy-AV-XvO" id="QUN-2R-vO5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P2D-c3-WeY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

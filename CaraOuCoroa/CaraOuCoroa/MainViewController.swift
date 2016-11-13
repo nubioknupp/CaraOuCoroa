@@ -19,7 +19,14 @@ class MainViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "segueDetalhes"){
+            let numeroRandomico = Int(arc4random_uniform(2));
+            let viewControllerDestino = segue.destination as! DetalhesViewController;
+            
+            viewControllerDestino.numeroRandomicoRecebido = numeroRandomico;
+        }
+    }
 }
 
